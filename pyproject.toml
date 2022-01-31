@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "azure-aws-login"
+version = "0.1.0"
+description = "A small CLI to login to AWS accounts with Azure AD"
+authors = ["Fall1ngStar <fall1ngstar.public@gmail.com>"]
+
+[tool.poetry.scripts]
+azure-aws-login = "azure_aws_login.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+selenium = "^4.1.0"
+selenium-wire = "^4.6.0"
+boto3 = "^1.20.46"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
